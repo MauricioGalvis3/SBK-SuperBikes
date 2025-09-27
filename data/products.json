@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Kawasaki Ninja ZX-6R",
+    "price": 45000000,
+    "description": "Motoneta deportiva de media cilindrada.",
+    "image": "img/zx6r.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Yamaha R1",
+    "price": 78000000,
+    "description": "Superbike de alta cilindrada.",
+    "image": "img/r1.jpg"
+  }
+]

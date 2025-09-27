@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+aside {
+  width: 200px;
+  float: left;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.main-content {
+  display: flex;
+}
