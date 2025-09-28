@@ -10,15 +10,41 @@
   <!-- Aquí se cargará dinámicamente el header -->
   <div id="header-container"></div>
 
+
   <div class="main-content">
     <!-- Aquí se cargará dinámicamente el sidebar -->
     <div id="sidebar-container"></div>
 
     <!-- Contenido principal -->
     <section id="content">
-      <h2>Bienvenido a SBK Sportbiker</h2>
+      <h2>Bienvenido a SBK Superbikes</h2>
+      <p>Tu portal de motos deportivas de media y alta cilindrada</p>
       <div id="products-container"></div>
     </section>
+  </div>
+
+  <!-- Modal de contacto -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <h2>Asesoría personalizada</h2>
+      <p id="selected-product">Producto seleccionado: </p>
+
+      <form id="advisor-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </div>
 
   <!-- Aquí se cargará dinámicamente el footer -->

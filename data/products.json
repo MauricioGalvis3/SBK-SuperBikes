@@ -4,13 +4,63 @@
     "name": "Kawasaki Ninja ZX-6R",
     "price": 45000000,
     "description": "Motoneta deportiva de media cilindrada.",
-    "image": "img/zx6r.jpg"
+    "image": "img/zx-6rr.png",
+    "category": "Nuevas"
   },
   {
     "id": 2,
     "name": "Yamaha R1",
     "price": 78000000,
     "description": "Superbike de alta cilindrada.",
-    "image": "img/r1.jpg"
+    "image": "img/r1.webp",
+    "category": "Nuevas"
+  },
+  {
+    "id": 3,
+    "name": "Honda CBR 600RR",
+    "price": 50000000,
+    "description": "Deportiva versátil con gran rendimiento.",
+    "image": "img/honda-cbr600rr.jpg",
+    "category": "Ofertas"
+  },
+  {
+    "id": 4,
+    "name": "Suzuki GSX-R750",
+    "price": 52000000,
+    "description": "Equilibrio perfecto entre potencia y maniobrabilidad.",
+    "image": "img/gsxr750.png",
+    "category": "Usadas"
+  },
+  {
+    "id": 5,
+    "name": "BMW S1000RR",
+    "price": 90000000,
+    "description": "Tecnología alemana con diseño agresivo.",
+    "image": "img/s1000rr.jpg",
+    "category": "Nuevas"
+  },
+  {
+    "id": 6,
+    "name": "Ducati Panigale V4",
+    "price": 120000000,
+    "description": "Superbike italiana con un diseño icónico.",
+    "image": "img/panigalev4.jpg",
+    "category": "Nuevas"
+  },
+  {
+    "id": 7,
+    "name": "Aprilia RSV4",
+    "price": 95000000,
+    "description": "Moto de alto rendimiento inspirada en MotoGP.",
+    "image": "img/rsv4.jpg",
+    "category": "Ofertas"
+  },
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
   }
 ]
