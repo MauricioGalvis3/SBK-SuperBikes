@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/Login.css">
+</head>
+<body>
+    <form>
+        <img src="img/sbk.png" alt="logo">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" placeholder="Ingrese su Usuario" required></input> 
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Ingrese su Contraseña" required></input>
+        <div class="box-visible">
+            <span style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+                <input type="checkbox" id="visible">
+                <label for="visible" style="margin: 0;">Mostrar Contraseña</label>
+            </span>
+        </div>
+        <button type="submit" id="submit">Iniciar Sesion</button>
+    </form>
+    <script src="js/login.js"></script>
+</body>
+</html>
