@@ -38,6 +38,7 @@ function renderProducts(products) {
         <h3>${product.name}</h3>
         <p>${product.description}</p>
         <p><strong>Precio:</strong> $${product.price.toLocaleString()}</p>
+        <p><strong>Kilometraje:</strong> ${product.kilometraje}</p>
         <p><em>${product.category}</em></p>
         <button class="interest-btn" data-product="${product.name}">Me interesa</button>
       </div>

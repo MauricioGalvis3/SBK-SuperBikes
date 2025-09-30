@@ -1,19 +1,21 @@
 [
   {
     "id": 1,
-    "name": "Kawasaki Ninja ZX-6R",
-    "price": 45000000,
-    "description": "Motoneta deportiva de media cilindrada.",
-    "image": "img/zx-6rr.png",
-    "category": "Nuevas"
+    "name": "Yamaha R1",
+    "price": 75000000,
+    "description": "Superbike japonesa de alto rendimiento.",
+    "image": "img/yamaha-r1.webp",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 2,
-    "name": "Yamaha R1",
-    "price": 78000000,
-    "description": "Superbike de alta cilindrada.",
-    "image": "img/r1.webp",
-    "category": "Nuevas"
+    "name": "Kawasaki Ninja ZX-10R",
+    "price": 72000000,
+    "description": "Moto de pista con tecnología de competición.",
+    "image": "img/zx6RR.jpg",
+    "category": ["Ofertas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 3,
@@ -21,153 +23,160 @@
     "price": 50000000,
     "description": "Deportiva versátil con gran rendimiento.",
     "image": "img/honda-cbr600rr.jpg",
-    "category": "Nuevas, Ofertas"
+    "category": ["Nuevas", "Ofertas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 4,
-    "name": "Suzuki GSX-R750",
-    "price": 52000000,
-    "description": "Equilibrio perfecto entre potencia y maniobrabilidad.",
-    "image": "img/gsxr750.png",
-    "category": "Usadas"
+    "name": "BMW S1000RR",
+    "price": 95000000,
+    "description": "Superbike alemana con diseño asimétrico.",
+    "image": "img/s1000rr.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 5,
-    "name": "BMW S1000RR",
-    "price": 90000000,
-    "description": "Tecnología alemana con diseño agresivo.",
-    "image": "img/s1000rr.jpg",
-    "category": "Nuevas"
+    "name": "Suzuki GSX-R750",
+    "price": 58000000,
+    "description": "Deportiva equilibrada entre potencia y manejo.",
+    "image": "img/gsxr750.png",
+    "category": ["Usadas"],
+    "kilometraje": "12,500 km"
   },
   {
     "id": 6,
     "name": "Ducati Panigale V4",
-    "price": 120000000,
-    "description": "Superbike italiana con un diseño icónico.",
+    "price": 110000000,
+    "description": "Máxima expresión de la ingeniería italiana.",
     "image": "img/panigalev4.jpg",
-    "category": "Nuevas"
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 7,
     "name": "Aprilia RSV4",
-    "price": 95000000,
-    "description": "Moto de alto rendimiento inspirada en MotoGP.",
+    "price": 89000000,
+    "description": "Moto italiana con alma de competición.",
     "image": "img/rsv4.jpg",
-    "category": "Ofertas"
+    "category": ["Ofertas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
+    "name": "KTM Duke-390",
+    "price": 25000000,
+    "description": "la reina del mediano cc.",
+    "image": "img/390.png",
+    "category": ["Usadas"],
+    "kilometraje": "18,300 km"
   },
   {
     "id": 9,
-    "name": "Ktm Duke 390",
-    "price": 30000000,
-    "description": "Es la reina cuando se trata de destrozar el asfalto.",
-    "image": "img/390.png",
-    "category": "Nuevas"
-  }
-  ,
+    "name": "Triumph Street Triple RS",
+    "price": 67000000,
+    "description": "Naked inglesa con carácter deportivo.",
+    "image": "img/triumph-street-triple-rs.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
   {
     "id": 10,
-    "name": "Cf Moto 450NK",
-    "price": 28000000,
-    "description": "Ees el vehículo ideal para quienes buscan la mezcla perfecta entre tecnología y desempeño.",
-    "image": "img/450nk.png",
-    "category": "Nuevas, Ofertas"
-  }
-  ,
+    "name": "KTM Duke 790",
+    "price": 48000000,
+    "description": "Naked austriaca ágil y ligera.",
+    "image": "img/ktm-duke-790.jpg",
+    "category": ["Ofertas"],
+    "kilometraje": "6,800 km"
+  },
   {
     "id": 11,
-    "name": "BMW S1000R",
-    "price": 11000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/s1000r.jpg",
-    "category": "Nuevas"
-  }
-  ,
+    "name": "MV Agusta F3 800",
+    "price": 87000000,
+    "description": "Deportiva italiana con diseño exclusivo.",
+    "image": "img/mv-agusta-f3.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 12,
+    "name": "Honda Africa Twin",
+    "price": 56000000,
+    "description": "Adventure japonesa lista para cualquier terreno.",
+    "image": "img/honda-africa-twin.jpg",
+    "category": ["Usadas"],
+    "kilometraje": "14,200 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 13,
+    "name": "BMW R1250GS",
+    "price": 88000000,
+    "description": "La reina del touring adventure.",
+    "image": "img/bmw-r1250gs.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 14,
+    "name": "Ducati Monster 821",
+    "price": 62000000,
+    "description": "La naked italiana por excelencia.",
+    "image": "img/ducati-monster-821.jpg",
+    "category": ["Ofertas"],
+    "kilometraje": "9,500 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 15,
+    "name": "Yamaha MT-09",
+    "price": 51000000,
+    "description": "Naked con motor tricilíndrico muy divertido.",
+    "image": "img/yamaha-mt09.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 16,
+    "name": "Kawasaki Z900",
+    "price": 53000000,
+    "description": "Una naked con espíritu salvaje.",
+    "image": "img/kawasaki-z900.jpg",
+    "category": ["Usadas"],
+    "kilometraje": "11,800 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 17,
+    "name": "Royal Enfield Interceptor 650",
+    "price": 28000000,
+    "description": "Clásica moderna con estilo retro.",
+    "image": "img/royal-enfield-650.jpg",
+    "category": ["Ofertas"],
+    "kilometraje": "7,300 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 18,
+    "name": "Benelli TNT 600i",
+    "price": 32000000,
+    "description": "Naked italiana accesible y potente.",
+    "image": "img/benelli-tnt600i.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
-  }
-  ,
+    "id": 19,
+    "name": "Suzuki Hayabusa",
+    "price": 105000000,
+    "description": "La mítica superbike de velocidad extrema.",
+    "image": "img/suzuki-hayabusa.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
   {
-    "id": 8,
-    "name": "Triumph Daytona 675",
-    "price": 48000000,
-    "description": "Estilo británico con agilidad y potencia balanceadas.",
-    "image": "img/daytona675.jpg",
-    "category": "Usadas"
+    "id": 20,
+    "name": "S1000r",
+    "price": 64000000,
+    "description": "Top en ingenieria alemana ! es Una s10000r!.",
+    "image": "img/",
+    "category": ["Usadas"],
+    "kilometraje": "20,100 km"
   }
 ]
