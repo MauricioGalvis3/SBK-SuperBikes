@@ -1,38 +1,33 @@
-// Redirigir al login al cerrar sesión
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    const logoutBtn = document.getElementById('logoutBtn');
-    if (logoutBtn) {
-      logoutBtn.addEventListener('click', function() {
-        window.location.href = 'login.html';
-      });
-    }
-  }, 300); // Espera breve para cargar el header
-});
-// Cargar fragmentos dinámicos
+// =======================
+// CARGA DE FRAGMENTOS
+// =======================
 function loadComponent(id, file) {
   fetch(file)
     .then(res => res.text())
     .then(data => {
       document.getElementById(id).innerHTML = data;
-    });
+    })
+    .catch(err => console.error(`Error cargando ${file}:`, err));
 }
 
 loadComponent('header-container', 'components/header.html');
 loadComponent('footer-container', 'components/footer.html');
 loadComponent('sidebar-container', 'components/sidebar.html');
 
-
-// Variable global para almacenar productos
+// =======================
+// VARIABLES GLOBALES
+// =======================
 let allProducts = [];
 
-// Función para mostrar productos en el contenedor
+// =======================
+// RENDERIZAR PRODUCTOS
+// =======================
 function renderProducts(products) {
-  let container = document.getElementById('products-container');
-  container.innerHTML = ""; // limpiar antes de renderizar
+  const container = document.getElementById('products-container');
+  let html = "";
 
   products.forEach(product => {
-    let card = `
+    html += `
       <div class="product-card">
         <img src="${product.image}" alt="${product.name}">
         <h3>${product.name}</h3>
@@ -43,32 +38,36 @@ function renderProducts(products) {
         <button class="interest-btn" data-product="${product.name}">Me interesa</button>
       </div>
     `;
-    container.innerHTML += card;
   });
 
-  // Vuelve a enlazar eventos de interés cada vez que se rendericen productos
+  container.innerHTML = html;
+
+  // Reenlazar eventos cada vez que se renderizan productos
   attachInterestEvents();
 }
 
-// Cargar productos desde JSON
+// =======================
+// CARGAR PRODUCTOS DESDE JSON
+// =======================
 function loadProducts() {
   fetch('data/products.json')
     .then(res => res.json())
     .then(products => {
-      allProducts = products;        // Guardar todos los productos
-      renderProducts(allProducts);   // Mostrar todos al inicio
+      allProducts = products;
+      renderProducts(allProducts);
     })
     .catch(err => console.error("Error al cargar productos:", err));
 }
 
-// Filtrar productos (función global)
-window.filterProducts = function(category) {
+// =======================
+// FILTRAR PRODUCTOS
+// =======================
+window.filterProducts = function (category) {
   if (category === 'all') {
     renderProducts(allProducts);
   } else {
-    let filtered = allProducts.filter(p => {
+    const filtered = allProducts.filter(p => {
       if (!p.category) return false;
-      // Si es array, compara cada elemento; si es string, compara directo
       if (Array.isArray(p.category)) {
         return p.category.map(c => c.trim().toLowerCase()).includes(category.toLowerCase().trim());
       } else if (typeof p.category === 'string') {
@@ -78,9 +77,11 @@ window.filterProducts = function(category) {
     });
     renderProducts(filtered);
   }
-}
+};
 
-// Modal y eventos de interés
+// =======================
+// MODAL: "ME INTERESA"
+// =======================
 function attachInterestEvents() {
   const modal = document.getElementById("contact-modal");
   const selectedProductText = document.getElementById("selected-product");
@@ -95,24 +96,71 @@ function attachInterestEvents() {
     btn.addEventListener("click", () => {
       const productName = btn.getAttribute("data-product");
       selectedProductText.textContent = "Producto seleccionado: " + productName;
-      modal.style.display = "flex"; // mostrar modal
+      modal.style.display = "flex";
     });
   });
 
   window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
+    if (e.target === modal) modal.style.display = "none";
   });
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
+    const phoneInput = form.querySelector('input[type="tel"]');
+    const phoneRegex = /^\+?\d{7,15}$/; 
+    if (phoneInput && !phoneRegex.test(phoneInput.value.trim())) {
+      phoneInput.value = '';
+      phoneInput.focus();
+      phoneInput.setCustomValidity('Ingrese un número válido (solo dígitos, opcional +).');
+      phoneInput.reportValidity();
+      return;
+    }
+    if (phoneInput) phoneInput.setCustomValidity('');
     alert("Formulario enviado. Pronto nos pondremos en contacto.");
     modal.style.display = "none";
     form.reset();
   });
 }
 
+// =======================
+// EVENTOS AL INICIO
+// =======================
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    // Modal de contacto directo
+    const contactBtn = Array.from(document.querySelectorAll('nav .header-btn'))
+      .find(btn => btn.textContent.trim().toLowerCase() === 'contacto');
+    const directContactModal = document.getElementById('direct-contact-modal');
+    const closeContactModal = document.getElementById('close-contact-modal');
 
-// Ejecutar al inicio
-loadProducts();
+    if (contactBtn && directContactModal) {
+      contactBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        directContactModal.style.display = 'flex';
+      });
+    }
+
+    if (closeContactModal) {
+      closeContactModal.addEventListener('click', () => {
+        directContactModal.style.display = 'none';
+      });
+    }
+
+    window.addEventListener('click', (e) => {
+      if (e.target === directContactModal) {
+        directContactModal.style.display = 'none';
+      }
+    });
+
+    // Logout redirige al login
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', () => {
+        window.location.href = 'login.html';
+      });
+    }
+  }, 300);
+
+  // Cargar productos
+  loadProducts();
+});
