@@ -107,11 +107,11 @@ function attachInterestEvents() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const phoneInput = form.querySelector('input[type="tel"]');
-    const phoneRegex = /^\+?\d{7,15}$/; 
+  const phoneRegex = /^\d+$/;
     if (phoneInput && !phoneRegex.test(phoneInput.value.trim())) {
       phoneInput.value = '';
       phoneInput.focus();
-      phoneInput.setCustomValidity('Ingrese un número válido (solo dígitos, opcional +).');
+      phoneInput.setCustomValidity('Ingrese un número de teléfono válido de 10 dígitos.');
       phoneInput.reportValidity();
       return;
     }
