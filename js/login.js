@@ -24,9 +24,22 @@ const $username = document.getElementById('username');
 
 document.addEventListener("click", (event) => {
 	if (event.target === $submit) {
-		if ($password.value === "1234" && $username.value === "Andres") {
-			event.preventDefault();
+		event.preventDefault();
+		if (
+			$password.value === "1234" &&
+			$username.value.trim().toLowerCase() === "andres"
+		) {
 			window.location.href = "index.html";
+		} else {
+			let msg = document.getElementById('login-message');
+			if (!msg) {
+				msg = document.createElement('div');
+				msg.id = 'login-message';
+				msg.style.color = 'red';
+				msg.style.marginTop = '10px';
+				$submit.parentNode.appendChild(msg);
+			}
+			msg.textContent = 'Usuario no encontrado, regístrate.';
 		}
 	}
 });
