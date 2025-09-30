@@ -24,7 +24,7 @@ const $username = document.getElementById('username');
 
 document.addEventListener("click", (event) => {
 	if (event.target === $submit) {
-		if ($password.value !== "" && $username.value !== "") {
+		if ($password.value === "1234" && $username.value === "Andres") {
 			event.preventDefault();
 			window.location.href = "index.html";
 		}

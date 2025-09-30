@@ -62,13 +62,19 @@ function loadProducts() {
 }
 
 // Filtrar productos (función global)
-function filterProducts(category) {
+window.filterProducts = function(category) {
   if (category === 'all') {
     renderProducts(allProducts);
   } else {
     let filtered = allProducts.filter(p => {
-      // Permite coincidencias parciales en categorías separadas por coma
-      return p.category.split(',').map(c => c.trim().toLowerCase()).includes(category.toLowerCase());
+      if (!p.category) return false;
+      // Si es array, compara cada elemento; si es string, compara directo
+      if (Array.isArray(p.category)) {
+        return p.category.map(c => c.trim().toLowerCase()).includes(category.toLowerCase().trim());
+      } else if (typeof p.category === 'string') {
+        return p.category.toLowerCase().split(',').map(c => c.trim()).includes(category.toLowerCase().trim());
+      }
+      return false;
     });
     renderProducts(filtered);
   }

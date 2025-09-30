@@ -4,7 +4,7 @@
     "name": "Yamaha R1",
     "price": 75000000,
     "description": "Superbike japonesa de alto rendimiento.",
-    "image": "img/yamaha-r1.webp",
+    "image": "img/R1.webp",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -13,7 +13,7 @@
     "name": "Kawasaki Ninja ZX-10R",
     "price": 72000000,
     "description": "Moto de pista con tecnología de competición.",
-    "image": "img/zx6RR.jpg",
+    "image": "img/zx10.jpg",
     "category": ["Ofertas"],
     "kilometraje": "0 km"
   },
@@ -76,7 +76,7 @@
     "name": "Triumph Street Triple RS",
     "price": 67000000,
     "description": "Naked inglesa con carácter deportivo.",
-    "image": "img/triumph-street-triple-rs.jpg",
+    "image": "img/trium.png",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -85,7 +85,7 @@
     "name": "KTM Duke 790",
     "price": 48000000,
     "description": "Naked austriaca ágil y ligera.",
-    "image": "img/ktm-duke-790.jpg",
+    "image": "img/790.png",
     "category": ["Ofertas"],
     "kilometraje": "6,800 km"
   },
@@ -94,7 +94,7 @@
     "name": "MV Agusta F3 800",
     "price": 87000000,
     "description": "Deportiva italiana con diseño exclusivo.",
-    "image": "img/mv-agusta-f3.jpg",
+    "image": "img/f3.png",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -103,7 +103,7 @@
     "name": "Honda Africa Twin",
     "price": 56000000,
     "description": "Adventure japonesa lista para cualquier terreno.",
-    "image": "img/honda-africa-twin.jpg",
+    "image": "img/africa.png",
     "category": ["Usadas"],
     "kilometraje": "14,200 km"
   },
@@ -112,7 +112,7 @@
     "name": "BMW R1250GS",
     "price": 88000000,
     "description": "La reina del touring adventure.",
-    "image": "img/bmw-r1250gs.jpg",
+    "image": "img/r1250.png",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -121,7 +121,7 @@
     "name": "Ducati Monster 821",
     "price": 62000000,
     "description": "La naked italiana por excelencia.",
-    "image": "img/ducati-monster-821.jpg",
+    "image": "img/monster.png",
     "category": ["Ofertas"],
     "kilometraje": "9,500 km"
   },
@@ -130,7 +130,7 @@
     "name": "Yamaha MT-09",
     "price": 51000000,
     "description": "Naked con motor tricilíndrico muy divertido.",
-    "image": "img/yamaha-mt09.jpg",
+    "image": "img/09.png",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -139,25 +139,25 @@
     "name": "Kawasaki Z900",
     "price": 53000000,
     "description": "Una naked con espíritu salvaje.",
-    "image": "img/kawasaki-z900.jpg",
+    "image": "img/z900.png",
     "category": ["Usadas"],
     "kilometraje": "11,800 km"
   },
   {
     "id": 17,
-    "name": "Royal Enfield Interceptor 650",
+    "name": "Cf Moto 450NK",
     "price": 28000000,
-    "description": "Clásica moderna con estilo retro.",
-    "image": "img/royal-enfield-650.jpg",
-    "category": ["Ofertas"],
-    "kilometraje": "7,300 km"
+    "description": "es el vehículo ideal para quienes buscan la mezcla perfecta entre tecnología y desempeño.",
+    "image": "img/450nk.png",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
   },
   {
     "id": 18,
     "name": "Benelli TNT 600i",
     "price": 32000000,
     "description": "Naked italiana accesible y potente.",
-    "image": "img/benelli-tnt600i.jpg",
+    "image": "img/beneli.png",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -166,7 +166,7 @@
     "name": "Suzuki Hayabusa",
     "price": 105000000,
     "description": "La mítica superbike de velocidad extrema.",
-    "image": "img/suzuki-hayabusa.jpg",
+    "image": "img/hayabusa.png",
     "category": ["Nuevas"],
     "kilometraje": "0 km"
   },
@@ -175,7 +175,7 @@
     "name": "S1000r",
     "price": 64000000,
     "description": "Top en ingenieria alemana ! es Una s10000r!.",
-    "image": "img/",
+    "image": "img/s1000r.jpg",
     "category": ["Usadas"],
     "kilometraje": "20,100 km"
   }
