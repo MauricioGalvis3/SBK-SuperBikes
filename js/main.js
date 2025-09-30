@@ -1,3 +1,14 @@
+// Redirigir al login al cerrar sesión
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function() {
+        window.location.href = 'login.html';
+      });
+    }
+  }, 300); // Espera breve para cargar el header
+});
 // Cargar fragmentos dinámicos
 function loadComponent(id, file) {
   fetch(file)
@@ -54,7 +65,10 @@ function filterProducts(category) {
   if (category === 'all') {
     renderProducts(allProducts);
   } else {
-    let filtered = allProducts.filter(p => p.category === category);
+    let filtered = allProducts.filter(p => {
+      // Permite coincidencias parciales en categorías separadas por coma
+      return p.category.split(',').map(c => c.trim().toLowerCase()).includes(category.toLowerCase());
+    });
     renderProducts(filtered);
   }
 }

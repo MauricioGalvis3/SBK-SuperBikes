@@ -21,7 +21,7 @@
     "price": 50000000,
     "description": "Deportiva versátil con gran rendimiento.",
     "image": "img/honda-cbr600rr.jpg",
-    "category": "Ofertas"
+    "category": "Nuevas, Ofertas"
   },
   {
     "id": 4,
@@ -55,6 +55,113 @@
     "image": "img/rsv4.jpg",
     "category": "Ofertas"
   },
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  },
+  {
+    "id": 9,
+    "name": "Ktm Duke 390",
+    "price": 30000000,
+    "description": "Es la reina cuando se trata de destrozar el asfalto.",
+    "image": "img/390.png",
+    "category": "Nuevas"
+  }
+  ,
+  {
+    "id": 10,
+    "name": "Cf Moto 450NK",
+    "price": 28000000,
+    "description": "Ees el vehículo ideal para quienes buscan la mezcla perfecta entre tecnología y desempeño.",
+    "image": "img/450nk.png",
+    "category": "Nuevas, Ofertas"
+  }
+  ,
+  {
+    "id": 11,
+    "name": "BMW S1000R",
+    "price": 11000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/s1000r.jpg",
+    "category": "Nuevas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
+  {
+    "id": 8,
+    "name": "Triumph Daytona 675",
+    "price": 48000000,
+    "description": "Estilo británico con agilidad y potencia balanceadas.",
+    "image": "img/daytona675.jpg",
+    "category": "Usadas"
+  }
+  ,
   {
     "id": 8,
     "name": "Triumph Daytona 675",

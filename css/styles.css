@@ -1,3 +1,25 @@
+/* Fuente global */
+* {
+  font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Animación en botones */
+button, form button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, form button:hover {
+  transform: scale(1.08);
+}
+
+/* Animación en casillas de verificación */
+input[type="checkbox"] {
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.25);
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
