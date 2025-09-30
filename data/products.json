@@ -178,5 +178,32 @@
     "image": "img/s1000r.jpg",
     "category": ["Usadas"],
     "kilometraje": "20,100 km"
+  },
+  {
+    "id": 21,
+    "name": "cb650r",
+    "price": 56000000,
+    "description": "La tetracilindria de estilo caferacer.",
+    "image": "img/cb650r.jpeg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
+  {
+    "id": 22,
+    "name": "Honda CBR1000RR-R FIREBLADE SP",
+    "price": 159900000,
+    "description": "La superbike de maxima ingenieria honda .",
+    "image": "img/cbr1000rrr.jpg",
+    "category": ["Nuevas"],
+    "kilometraje": "0 km"
+  },
+  {
+    "id": 19,
+    "name": "Yamaha FZ-1",
+    "price": 40000000,
+    "description": "La mítica Naked de torque y velocidad extrema.",
+    "image": "img/fz1.jpg",
+    "category": ["Usadas"],
+    "kilometraje": "45000 km"
   }
 ]
